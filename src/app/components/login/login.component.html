@@ -1,0 +1,9 @@
+<form (ngSubmit)="login()" #form="ngForm" fxLayout="column">
+  <md-input-container>
+    <input  [(ngModel)]="email" name="email" type="email" mdInput placeholder="Correo" required>
+  </md-input-container>
+  <md-input-container>
+    <input [(ngModel)]="password" name="password" type="password" mdInput placeholder="Contraseña" required>
+  </md-input-container>
+  <button md-button>Entrar</button>
+</form>

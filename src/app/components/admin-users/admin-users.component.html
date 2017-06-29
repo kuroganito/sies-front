@@ -1,0 +1,21 @@
+<div fxLayout="row" fxLayoutAlign="end">
+  <button (click)="addPerson()" md-button>Agregar persona</button>
+</div>
+<table>
+  <thead>
+    <tr>
+      <th>
+        Nombre
+      </th>
+      <th>
+        Correo
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{user.name}}</td>
+      <td>{{user.email}}</td>
+    </tr>
+  </tbody>
+</table>

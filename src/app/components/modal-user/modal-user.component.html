@@ -1,0 +1,24 @@
+<h2 md-dialog-title>Informacion de persona</h2>
+<md-dialog-content class="form-modal" fxLayout="column">
+  <md-input-container>
+    <label class="custom-label">Nombre</label>
+    <input mdInput [(ngModel)]="person.name">
+  </md-input-container>
+  <md-input-container>
+    <label class="custom-label">Correo electronico</label>
+    <input mdInput [(ngModel)]="person.email">
+  </md-input-container>
+  <div>
+    <md-slide-toggle>Activo</md-slide-toggle>
+  </div>
+  <md-radio-group [(ngModel)]="person.roles">
+    <label class="custom-label">Roles</label>
+    <md-checkbox value="user">Usuario</md-checkbox>
+    <md-checkbox value="admin">Administrador</md-checkbox>
+  </md-radio-group>
+  
+</md-dialog-content>
+<md-dialog-actions fxLayout="row" fxLayoutAlign="end">
+  <button md-button md-dialog-close>Guardar</button>
+  <button md-button md-dialog-close>Cancelar</button>
+</md-dialog-actions>

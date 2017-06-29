@@ -1,0 +1,15 @@
+<app-header [isAdmin]="isAdmin" [isLogged]="isLogged"></app-header>
+
+<div fxLayout="row">
+
+  <md-tab-group>
+    <md-tab label="Personas">
+      <app-admin-users></app-admin-users>
+    </md-tab>
+    <md-tab label="Retos">
+      <app-admin-challenges></app-admin-challenges>
+    </md-tab>
+  </md-tab-group>
+
+
+</div>

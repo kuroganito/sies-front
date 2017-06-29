@@ -1,0 +1,10 @@
+<md-toolbar>
+  <h1 class ="cursor-pointer" (click)="goHome()">SieS</h1>
+  <div class="flex-container">
+    <a *ngIf="isLogged" routerLink="/mi-perfil" md-button>Mi perfil</a>
+    <a *ngIf="isLogged" routerLink="/top" md-button>Top</a>
+    <a *ngIf="isLogged" routerLink="/retos" md-button>Retos</a>
+    <a *ngIf="isLogged && isAdmin" routerLink="/administracion" md-button>Admin</a>
+    <a *ngIf="isLogged" (click)="logout()" md-button>Salir</a>
+  </div>
+</md-toolbar>
